@@ -163,9 +163,6 @@ TEST(conjunto_test, test_stress) {
     //Insertar de nuevo
     for (int i = 0; i < NCLAVES; i++) {
 	    int k = clave(i);
-	    if(k == -55988){
-	        bool prueba1 = false;
-	    }
 	    ASSERT_TRUE(c.pertenece(k));
 	    c.insertar(k);
 	    ASSERT_TRUE(c.pertenece(k));
@@ -175,9 +172,6 @@ TEST(conjunto_test, test_stress) {
     // Eliminar los valores para i par
     for (int i = 0; i < NCLAVES; i++) {
 	    int k = clave(i);
-	    if(k == -195998){
-	        bool queverga = false;
-	    }
 	    ASSERT_TRUE(c.pertenece(k));
 	    if (i % 2 == 0) {
 	    	c.remover(k);

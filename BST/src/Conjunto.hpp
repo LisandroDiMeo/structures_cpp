@@ -130,10 +130,14 @@ Nodo<T> *Conjunto<T>::borrar(Nodo<T> *nodo, const T &elem) {
     else{ // elem == nodo->valor
         if(nodo->izq == nullptr){
             Nodo<T> * temp = nodo->der;
+            nodo->izq = nullptr;
+            nodo->der = nullptr;
             delete nodo;
             return temp;
         }else if(nodo->der == nullptr){
             Nodo<T> * temp = nodo->izq;
+            nodo->izq = nullptr;
+            nodo->der = nullptr;
             delete nodo;
             return temp;
         }
