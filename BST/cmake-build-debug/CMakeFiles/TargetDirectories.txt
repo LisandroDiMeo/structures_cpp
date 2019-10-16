@@ -1,0 +1,6 @@
+/Users/lisandrodiaz/Desktop/Facultad/Algoritmos2/taller_conjunto_sobre_ABB/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/lisandrodiaz/Desktop/Facultad/Algoritmos2/taller_conjunto_sobre_ABB/cmake-build-debug/CMakeFiles/correrValgrind.dir
+/Users/lisandrodiaz/Desktop/Facultad/Algoritmos2/taller_conjunto_sobre_ABB/cmake-build-debug/CMakeFiles/correrTests.dir
+/Users/lisandrodiaz/Desktop/Facultad/Algoritmos2/taller_conjunto_sobre_ABB/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/lisandrodiaz/Desktop/Facultad/Algoritmos2/taller_conjunto_sobre_ABB/cmake-build-debug/CMakeFiles/gtest_main.dir
+/Users/lisandrodiaz/Desktop/Facultad/Algoritmos2/taller_conjunto_sobre_ABB/cmake-build-debug/CMakeFiles/gtest.dir

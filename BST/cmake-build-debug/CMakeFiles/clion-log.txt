@@ -1,0 +1,4 @@
+/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /Users/lisandrodiaz/Desktop/Facultad/Algoritmos2/taller_conjunto_sobre_ABB
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /Users/lisandrodiaz/Desktop/Facultad/Algoritmos2/taller_conjunto_sobre_ABB/cmake-build-debug
