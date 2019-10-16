@@ -9,8 +9,8 @@ Lista<T>::Lista() {
 
 template <typename T>
 Lista<T>::Lista(const Lista<T>& l) : Lista() {
-    //Inicializa una lista vacía y luego utiliza operator= para no duplicar el código de la copia de una lista.
-    *this = l;
+    this->_prim = nullptr;
+    copiarNodos(l);
 }
 
 template <typename T>
@@ -25,6 +25,7 @@ void Lista<T>::destruirNodos(){
         Nodo *siguiente = actual->siguiente;
         delete actual;
         actual = siguiente;
+        this->cantElementos--;
     }
     this->_prim = nullptr;
     this->_ult = nullptr;

@@ -43,10 +43,10 @@ RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/lisandrodiaz/Desktop/Facultad/Algoritmos2/taller_lista_enlazada
+CMAKE_SOURCE_DIR = /Users/lisandrodiaz/Desktop/Facultad/Algoritmos2/structures_cpp/linked_list
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/lisandrodiaz/Desktop/Facultad/Algoritmos2/taller_lista_enlazada/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/lisandrodiaz/Desktop/Facultad/Algoritmos2/structures_cpp/linked_list/cmake-build-debug
 
 # Utility rule file for correrValgrind.
 
@@ -71,6 +71,6 @@ CMakeFiles/correrValgrind.dir/clean:
 .PHONY : CMakeFiles/correrValgrind.dir/clean
 
 CMakeFiles/correrValgrind.dir/depend:
-	cd /Users/lisandrodiaz/Desktop/Facultad/Algoritmos2/taller_lista_enlazada/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/lisandrodiaz/Desktop/Facultad/Algoritmos2/taller_lista_enlazada /Users/lisandrodiaz/Desktop/Facultad/Algoritmos2/taller_lista_enlazada /Users/lisandrodiaz/Desktop/Facultad/Algoritmos2/taller_lista_enlazada/cmake-build-debug /Users/lisandrodiaz/Desktop/Facultad/Algoritmos2/taller_lista_enlazada/cmake-build-debug /Users/lisandrodiaz/Desktop/Facultad/Algoritmos2/taller_lista_enlazada/cmake-build-debug/CMakeFiles/correrValgrind.dir/DependInfo.cmake --color=$(COLOR)
+	cd /Users/lisandrodiaz/Desktop/Facultad/Algoritmos2/structures_cpp/linked_list/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/lisandrodiaz/Desktop/Facultad/Algoritmos2/structures_cpp/linked_list /Users/lisandrodiaz/Desktop/Facultad/Algoritmos2/structures_cpp/linked_list /Users/lisandrodiaz/Desktop/Facultad/Algoritmos2/structures_cpp/linked_list/cmake-build-debug /Users/lisandrodiaz/Desktop/Facultad/Algoritmos2/structures_cpp/linked_list/cmake-build-debug /Users/lisandrodiaz/Desktop/Facultad/Algoritmos2/structures_cpp/linked_list/cmake-build-debug/CMakeFiles/correrValgrind.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/correrValgrind.dir/depend
 

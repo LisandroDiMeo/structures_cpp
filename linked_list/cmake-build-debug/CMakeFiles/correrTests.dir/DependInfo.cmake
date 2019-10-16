@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/Users/lisandrodiaz/Desktop/Facultad/Algoritmos2/taller_lista_enlazada/tests/lista_tests.cpp" "/Users/lisandrodiaz/Desktop/Facultad/Algoritmos2/taller_lista_enlazada/cmake-build-debug/CMakeFiles/correrTests.dir/tests/lista_tests.cpp.o"
+  "/Users/lisandrodiaz/Desktop/Facultad/Algoritmos2/structures_cpp/linked_list/tests/lista_tests.cpp" "/Users/lisandrodiaz/Desktop/Facultad/Algoritmos2/structures_cpp/linked_list/cmake-build-debug/CMakeFiles/correrTests.dir/tests/lista_tests.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "Clang")
 
@@ -14,8 +14,8 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/Users/lisandrodiaz/Desktop/Facultad/Algoritmos2/taller_lista_enlazada/cmake-build-debug/CMakeFiles/gtest.dir/DependInfo.cmake"
-  "/Users/lisandrodiaz/Desktop/Facultad/Algoritmos2/taller_lista_enlazada/cmake-build-debug/CMakeFiles/gtest_main.dir/DependInfo.cmake"
+  "/Users/lisandrodiaz/Desktop/Facultad/Algoritmos2/structures_cpp/linked_list/cmake-build-debug/CMakeFiles/gtest.dir/DependInfo.cmake"
+  "/Users/lisandrodiaz/Desktop/Facultad/Algoritmos2/structures_cpp/linked_list/cmake-build-debug/CMakeFiles/gtest_main.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.
