@@ -1,4 +1,5 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/correrTests.dir/src/prueba.cpp.o"
   "CMakeFiles/correrTests.dir/tests/conjunto-tests.cpp.o"
   "correrTests.pdb"
   "correrTests"

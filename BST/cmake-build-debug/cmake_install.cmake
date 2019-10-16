@@ -1,4 +1,4 @@
-# Install script for directory: /Users/lisandrodiaz/Desktop/Facultad/Algoritmos2/taller_conjunto_sobre_ABB
+# Install script for directory: /Users/lisandrodiaz/Desktop/Facultad/Algoritmos2/structures_cpp/BST
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -40,5 +40,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/Users/lisandrodiaz/Desktop/Facultad/Algoritmos2/taller_conjunto_sobre_ABB/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/Users/lisandrodiaz/Desktop/Facultad/Algoritmos2/structures_cpp/BST/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

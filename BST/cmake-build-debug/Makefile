@@ -48,10 +48,10 @@ RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/lisandrodiaz/Desktop/Facultad/Algoritmos2/taller_conjunto_sobre_ABB
+CMAKE_SOURCE_DIR = /Users/lisandrodiaz/Desktop/Facultad/Algoritmos2/structures_cpp/BST
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/lisandrodiaz/Desktop/Facultad/Algoritmos2/taller_conjunto_sobre_ABB/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/lisandrodiaz/Desktop/Facultad/Algoritmos2/structures_cpp/BST/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/lisandrodiaz/Desktop/Facultad/Algoritmos2/taller_conjunto_sobre_ABB/cmake-build-debug/CMakeFiles /Users/lisandrodiaz/Desktop/Facultad/Algoritmos2/taller_conjunto_sobre_ABB/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/lisandrodiaz/Desktop/Facultad/Algoritmos2/structures_cpp/BST/cmake-build-debug/CMakeFiles /Users/lisandrodiaz/Desktop/Facultad/Algoritmos2/structures_cpp/BST/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/lisandrodiaz/Desktop/Facultad/Algoritmos2/taller_conjunto_sobre_ABB/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/lisandrodiaz/Desktop/Facultad/Algoritmos2/structures_cpp/BST/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -161,6 +161,33 @@ gtest: cmake_check_build_system
 gtest/fast:
 	$(MAKE) -f CMakeFiles/gtest.dir/build.make CMakeFiles/gtest.dir/build
 .PHONY : gtest/fast
+
+src/prueba.o: src/prueba.cpp.o
+
+.PHONY : src/prueba.o
+
+# target to build an object file
+src/prueba.cpp.o:
+	$(MAKE) -f CMakeFiles/correrTests.dir/build.make CMakeFiles/correrTests.dir/src/prueba.cpp.o
+.PHONY : src/prueba.cpp.o
+
+src/prueba.i: src/prueba.cpp.i
+
+.PHONY : src/prueba.i
+
+# target to preprocess a source file
+src/prueba.cpp.i:
+	$(MAKE) -f CMakeFiles/correrTests.dir/build.make CMakeFiles/correrTests.dir/src/prueba.cpp.i
+.PHONY : src/prueba.cpp.i
+
+src/prueba.s: src/prueba.cpp.s
+
+.PHONY : src/prueba.s
+
+# target to generate assembly for a file
+src/prueba.cpp.s:
+	$(MAKE) -f CMakeFiles/correrTests.dir/build.make CMakeFiles/correrTests.dir/src/prueba.cpp.s
+.PHONY : src/prueba.cpp.s
 
 tests/conjunto-tests.o: tests/conjunto-tests.cpp.o
 
@@ -255,6 +282,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... gtest_main"
 	@echo "... gtest"
+	@echo "... src/prueba.o"
+	@echo "... src/prueba.i"
+	@echo "... src/prueba.s"
 	@echo "... tests/conjunto-tests.o"
 	@echo "... tests/conjunto-tests.i"
 	@echo "... tests/conjunto-tests.s"

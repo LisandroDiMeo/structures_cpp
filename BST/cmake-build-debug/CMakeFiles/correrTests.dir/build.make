@@ -43,10 +43,10 @@ RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/lisandrodiaz/Desktop/Facultad/Algoritmos2/taller_conjunto_sobre_ABB
+CMAKE_SOURCE_DIR = /Users/lisandrodiaz/Desktop/Facultad/Algoritmos2/structures_cpp/BST
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/lisandrodiaz/Desktop/Facultad/Algoritmos2/taller_conjunto_sobre_ABB/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/lisandrodiaz/Desktop/Facultad/Algoritmos2/structures_cpp/BST/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/correrTests.dir/depend.make
@@ -57,32 +57,47 @@ include CMakeFiles/correrTests.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/correrTests.dir/flags.make
 
+CMakeFiles/correrTests.dir/src/prueba.cpp.o: CMakeFiles/correrTests.dir/flags.make
+CMakeFiles/correrTests.dir/src/prueba.cpp.o: ../src/prueba.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/lisandrodiaz/Desktop/Facultad/Algoritmos2/structures_cpp/BST/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/correrTests.dir/src/prueba.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/correrTests.dir/src/prueba.cpp.o -c /Users/lisandrodiaz/Desktop/Facultad/Algoritmos2/structures_cpp/BST/src/prueba.cpp
+
+CMakeFiles/correrTests.dir/src/prueba.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/correrTests.dir/src/prueba.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/lisandrodiaz/Desktop/Facultad/Algoritmos2/structures_cpp/BST/src/prueba.cpp > CMakeFiles/correrTests.dir/src/prueba.cpp.i
+
+CMakeFiles/correrTests.dir/src/prueba.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/correrTests.dir/src/prueba.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/lisandrodiaz/Desktop/Facultad/Algoritmos2/structures_cpp/BST/src/prueba.cpp -o CMakeFiles/correrTests.dir/src/prueba.cpp.s
+
 CMakeFiles/correrTests.dir/tests/conjunto-tests.cpp.o: CMakeFiles/correrTests.dir/flags.make
 CMakeFiles/correrTests.dir/tests/conjunto-tests.cpp.o: ../tests/conjunto-tests.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/lisandrodiaz/Desktop/Facultad/Algoritmos2/taller_conjunto_sobre_ABB/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/correrTests.dir/tests/conjunto-tests.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/correrTests.dir/tests/conjunto-tests.cpp.o -c /Users/lisandrodiaz/Desktop/Facultad/Algoritmos2/taller_conjunto_sobre_ABB/tests/conjunto-tests.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/lisandrodiaz/Desktop/Facultad/Algoritmos2/structures_cpp/BST/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/correrTests.dir/tests/conjunto-tests.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/correrTests.dir/tests/conjunto-tests.cpp.o -c /Users/lisandrodiaz/Desktop/Facultad/Algoritmos2/structures_cpp/BST/tests/conjunto-tests.cpp
 
 CMakeFiles/correrTests.dir/tests/conjunto-tests.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/correrTests.dir/tests/conjunto-tests.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/lisandrodiaz/Desktop/Facultad/Algoritmos2/taller_conjunto_sobre_ABB/tests/conjunto-tests.cpp > CMakeFiles/correrTests.dir/tests/conjunto-tests.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/lisandrodiaz/Desktop/Facultad/Algoritmos2/structures_cpp/BST/tests/conjunto-tests.cpp > CMakeFiles/correrTests.dir/tests/conjunto-tests.cpp.i
 
 CMakeFiles/correrTests.dir/tests/conjunto-tests.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/correrTests.dir/tests/conjunto-tests.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/lisandrodiaz/Desktop/Facultad/Algoritmos2/taller_conjunto_sobre_ABB/tests/conjunto-tests.cpp -o CMakeFiles/correrTests.dir/tests/conjunto-tests.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/lisandrodiaz/Desktop/Facultad/Algoritmos2/structures_cpp/BST/tests/conjunto-tests.cpp -o CMakeFiles/correrTests.dir/tests/conjunto-tests.cpp.s
 
 # Object files for target correrTests
 correrTests_OBJECTS = \
+"CMakeFiles/correrTests.dir/src/prueba.cpp.o" \
 "CMakeFiles/correrTests.dir/tests/conjunto-tests.cpp.o"
 
 # External object files for target correrTests
 correrTests_EXTERNAL_OBJECTS =
 
+correrTests: CMakeFiles/correrTests.dir/src/prueba.cpp.o
 correrTests: CMakeFiles/correrTests.dir/tests/conjunto-tests.cpp.o
 correrTests: CMakeFiles/correrTests.dir/build.make
 correrTests: libgtest.a
 correrTests: libgtest_main.a
 correrTests: CMakeFiles/correrTests.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/lisandrodiaz/Desktop/Facultad/Algoritmos2/taller_conjunto_sobre_ABB/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable correrTests"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/lisandrodiaz/Desktop/Facultad/Algoritmos2/structures_cpp/BST/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable correrTests"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/correrTests.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -95,6 +110,6 @@ CMakeFiles/correrTests.dir/clean:
 .PHONY : CMakeFiles/correrTests.dir/clean
 
 CMakeFiles/correrTests.dir/depend:
-	cd /Users/lisandrodiaz/Desktop/Facultad/Algoritmos2/taller_conjunto_sobre_ABB/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/lisandrodiaz/Desktop/Facultad/Algoritmos2/taller_conjunto_sobre_ABB /Users/lisandrodiaz/Desktop/Facultad/Algoritmos2/taller_conjunto_sobre_ABB /Users/lisandrodiaz/Desktop/Facultad/Algoritmos2/taller_conjunto_sobre_ABB/cmake-build-debug /Users/lisandrodiaz/Desktop/Facultad/Algoritmos2/taller_conjunto_sobre_ABB/cmake-build-debug /Users/lisandrodiaz/Desktop/Facultad/Algoritmos2/taller_conjunto_sobre_ABB/cmake-build-debug/CMakeFiles/correrTests.dir/DependInfo.cmake --color=$(COLOR)
+	cd /Users/lisandrodiaz/Desktop/Facultad/Algoritmos2/structures_cpp/BST/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/lisandrodiaz/Desktop/Facultad/Algoritmos2/structures_cpp/BST /Users/lisandrodiaz/Desktop/Facultad/Algoritmos2/structures_cpp/BST /Users/lisandrodiaz/Desktop/Facultad/Algoritmos2/structures_cpp/BST/cmake-build-debug /Users/lisandrodiaz/Desktop/Facultad/Algoritmos2/structures_cpp/BST/cmake-build-debug /Users/lisandrodiaz/Desktop/Facultad/Algoritmos2/structures_cpp/BST/cmake-build-debug/CMakeFiles/correrTests.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/correrTests.dir/depend
 

@@ -10,6 +10,7 @@ Lista<T>::Lista() {
 template <typename T>
 Lista<T>::Lista(const Lista<T>& l) : Lista() {
     this->_prim = nullptr;
+    this->_ult = nullptr;
     copiarNodos(l);
 }
 
@@ -101,6 +102,8 @@ void Lista<T>::eliminar(Nat i) {
             }
             Nodo *anterior = actual->anterior;
             Nodo *siguiente = actual->siguiente;
+            actual->anterior = nullptr;
+            actual->siguiente = nullptr;
             delete actual;
             anterior->siguiente = siguiente;
             siguiente->anterior = anterior;
