@@ -72,6 +72,8 @@ class Conjunto
         void llenarVector(std::vector<T> &v, Nodo<T> * nodo);
         const T& next(Nodo<T> * nodo,const T& elem);
         Nodo<T> * vaciarArbol(Nodo<T> * nodo);
+        Nodo<T> * obtenerSucesor(Nodo<T> * nodo);
+        Nodo<T> * obtenerPadre(Nodo<T> * nodo);
         int _cardinal = 0;
         int _minimo;
         int _maximo;

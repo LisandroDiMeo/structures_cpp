@@ -16,16 +16,10 @@
   <component name="ChangeListManager">
     <list default="true" id="efe0c519-5152-4061-ba32-407f286bd1c1" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/correrTests.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/correrTests.dir/depend.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/gtest.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/gtest.dir/depend.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/gtest_main.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/gtest_main.dir/depend.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/correrTests.dir/tests/conjunto-tests.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/correrTests.dir/tests/conjunto-tests.cpp.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/correrTests" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/correrTests" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/libgtest.a" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/libgtest.a" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/libgtest_main.a" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/libgtest_main.a" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Conjunto.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/Conjunto.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Conjunto.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Conjunto.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/prueba.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/conjunto-tests.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/tests/conjunto-tests.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../linked_list/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../linked_list/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -106,7 +100,8 @@
       <workItem from="1571141712079" duration="2707000" />
       <workItem from="1571249053547" duration="50000" />
       <workItem from="1571260979270" duration="181000" />
-      <workItem from="1571265394555" duration="576000" />
+      <workItem from="1571265394555" duration="734000" />
+      <workItem from="1571613140439" duration="3799000" />
     </task>
     <servers />
   </component>

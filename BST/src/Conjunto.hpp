@@ -48,8 +48,44 @@ void Conjunto<T>::remover(const T& clave) {
 
 template <class T>
 const T& Conjunto<T>::siguiente(const T& clave) {
-    return this->next(this->_raiz, clave);
+    Nodo<T>* actual = this->_raiz;
+    while (actual->valor != clave){
+        if (actual->valor > clave)
+            actual = actual->izq;
+        else
+            actual = actual->der;
+    }
+    Nodo<T>* sucesor = obtenerSucesor(actual);
+    return sucesor->valor;
 }
+
+template<class T>
+Nodo<T> *Conjunto<T>::obtenerSucesor(Nodo<T> *nodo) {
+    if(nodo->der == nullptr){
+        Nodo<T>* padre = obtenerPadre(nodo);
+        return (padre != nullptr && padre->valor > nodo->valor) ? padre : nullptr;
+    }else {
+        Nodo<T>* sucesor = nodo->der;
+        while (sucesor->izq != nullptr){
+            sucesor = sucesor->izq;
+        }
+        return sucesor;
+    }
+}
+
+template<class T>
+Nodo<T> *Conjunto<T>::obtenerPadre(Nodo<T> *nodo) {
+    Nodo<T> * padre = this->_raiz;
+    while(padre != nullptr && padre->izq != nodo && padre->der != nodo){
+        if (padre->valor > nodo->valor){
+            padre = padre->izq;
+        }else{
+            padre = padre->der;
+        }
+    }
+    return padre;
+}
+
 
 template <class T>
 const T& Conjunto<T>::minimo() const {
@@ -215,12 +251,13 @@ int contieneOrdenada(vector<T> &s, const T &x) {
     }
 }
 
-template<class T>
-const T &Conjunto<T>::next(Nodo<T> *nodo,const T& elem) { // PRE: EL ELEMENTO SIEMPRE TIENE SIGUIENTE
-    std::vector<T> v = _inorder(nodo);
-    int indice = contieneOrdenada(v, elem);
-    indice++;
-    return v[indice];
-}
+//template<class T>
+//const T &Conjunto<T>::next(Nodo<T> *nodo,const T& elem) { // PRE: EL ELEMENTO SIEMPRE TIENE SIGUIENTE
+//    std::vector<T> v = _inorder(nodo);
+//    int indice = contieneOrdenada(v, elem);
+//    indice++;
+//    return v[indice];
+//}
+
 
 
