@@ -2,10 +2,11 @@
 <project version="4">
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
     <generated>
-      <config projectName="taller_abb" targetName="gtest" />
-      <config projectName="taller_abb" targetName="correrTests" />
-      <config projectName="taller_abb" targetName="correrValgrind" />
-      <config projectName="taller_abb" targetName="gtest_main" />
+      <config projectName="taller_trie" targetName="correrTests_ext" />
+      <config projectName="taller_trie" targetName="correrTests" />
+      <config projectName="taller_trie" targetName="correrValgrind" />
+      <config projectName="taller_trie" targetName="gtest" />
+      <config projectName="taller_trie" targetName="gtest_main" />
     </generated>
   </component>
   <component name="CMakeSettings">
@@ -14,7 +15,7 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="efe0c519-5152-4061-ba32-407f286bd1c1" name="Default Changelist" comment="" />
+    <list default="true" id="15015a1f-3685-4b72-b337-b1ef187fef71" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,11 +26,7 @@
     <option name="formatViaClangd" value="false" />
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
-  <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
-  </component>
-  <component name="ProjectId" id="1Rz9c54ALMKmvOB94mQKSC3aNrw" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectId" id="1ScWxdGfekIrSdMyDRzubMHy6h5" />
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -47,23 +44,29 @@
     </option>
   </component>
   <component name="RunManager" selected="Google Test.correrTests">
-    <configuration name="correrTests" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" PASS_PARENT_ENVS_2="true" PROJECT_NAME="taller_abb" TARGET_NAME="correrTests" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="taller_abb" RUN_TARGET_NAME="correrTests" TEST_MODE="SUITE_TEST">
+    <configuration name="correrTests" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" PASS_PARENT_ENVS_2="true" PROJECT_NAME="taller_trie" TARGET_NAME="correrTests" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="taller_trie" RUN_TARGET_NAME="correrTests" TEST_MODE="SUITE_TEST">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
         <option name="BeforeTestRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="correrValgrind" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="taller_abb" TARGET_NAME="correrValgrind" CONFIG_NAME="Debug">
+    <configuration name="correrTests_ext" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" PASS_PARENT_ENVS_2="true" PROJECT_NAME="taller_trie" TARGET_NAME="correrTests_ext" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="taller_trie" RUN_TARGET_NAME="correrTests_ext" TEST_MODE="SUITE_TEST">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+        <option name="BeforeTestRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="correrValgrind" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="taller_trie" TARGET_NAME="correrValgrind" CONFIG_NAME="Debug">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="gtest" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="taller_abb" TARGET_NAME="gtest" CONFIG_NAME="Debug">
+    <configuration name="gtest" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="taller_trie" TARGET_NAME="gtest" CONFIG_NAME="Debug">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="gtest_main" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="taller_abb" TARGET_NAME="gtest_main" CONFIG_NAME="Debug">
+    <configuration name="gtest_main" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="taller_trie" TARGET_NAME="gtest_main" CONFIG_NAME="Debug">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -73,6 +76,7 @@
       <item itemvalue="CMake Application.gtest" />
       <item itemvalue="CMake Application.gtest_main" />
       <item itemvalue="Google Test.correrTests" />
+      <item itemvalue="Google Test.correrTests_ext" />
     </list>
   </component>
   <component name="SvnConfiguration">
@@ -80,39 +84,24 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="efe0c519-5152-4061-ba32-407f286bd1c1" name="Default Changelist" comment="" />
-      <created>1570659133264</created>
+      <changelist id="15015a1f-3685-4b72-b337-b1ef187fef71" name="Default Changelist" comment="" />
+      <created>1571863611495</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1570659133264</updated>
-      <workItem from="1570659134668" duration="4802000" />
-      <workItem from="1570815970780" duration="1189000" />
-      <workItem from="1570844750185" duration="16331000" />
-      <workItem from="1571064805411" duration="8000" />
-      <workItem from="1571064819180" duration="408000" />
-      <workItem from="1571098829343" duration="580000" />
-      <workItem from="1571141712079" duration="2707000" />
-      <workItem from="1571249053547" duration="50000" />
-      <workItem from="1571260979270" duration="181000" />
-      <workItem from="1571265394555" duration="734000" />
-      <workItem from="1571613140439" duration="3908000" />
+      <updated>1571863611495</updated>
+      <workItem from="1571863612914" duration="5293000" />
+      <workItem from="1571870846109" duration="699000" />
+      <workItem from="1572131497343" duration="4511000" />
+      <workItem from="1572227542444" duration="2826000" />
+      <workItem from="1572282079912" duration="3995000" />
+      <workItem from="1572299803958" duration="7232000" />
+      <workItem from="1572400838364" duration="1292000" />
+      <workItem from="1572465615711" duration="410000" />
+      <workItem from="1572469594864" duration="3577000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
-  </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State>
-              <option name="COLUMN_ORDER" />
-            </State>
-          </value>
-        </entry>
-      </map>
-    </option>
   </component>
 </project>
