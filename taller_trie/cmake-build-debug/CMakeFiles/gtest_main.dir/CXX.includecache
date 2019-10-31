@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/Users/lisandrodiaz/Downloads/taller_trie/tests/gtest-1.8.1/gtest.h
+/home/ldimeo/Desktop/structures_cpp/taller_trie/tests/gtest-1.8.1/gtest.h
 limits
 -
 ostream
@@ -148,19 +148,19 @@ vector
 tuple
 -
 absl/strings/string_view.h
-/Users/lisandrodiaz/Downloads/taller_trie/tests/gtest-1.8.1/absl/strings/string_view.h
+/home/ldimeo/Desktop/structures_cpp/taller_trie/tests/gtest-1.8.1/absl/strings/string_view.h
 absl/types/optional.h
-/Users/lisandrodiaz/Downloads/taller_trie/tests/gtest-1.8.1/absl/types/optional.h
+/home/ldimeo/Desktop/structures_cpp/taller_trie/tests/gtest-1.8.1/absl/types/optional.h
 absl/types/variant.h
-/Users/lisandrodiaz/Downloads/taller_trie/tests/gtest-1.8.1/absl/types/variant.h
+/home/ldimeo/Desktop/structures_cpp/taller_trie/tests/gtest-1.8.1/absl/types/variant.h
 iosfwd
 -
 vector
 -
 
-/Users/lisandrodiaz/Downloads/taller_trie/tests/gtest-1.8.1/gtest_main.cc
+/home/ldimeo/Desktop/structures_cpp/taller_trie/tests/gtest-1.8.1/gtest_main.cc
 stdio.h
 -
 gtest.h
-/Users/lisandrodiaz/Downloads/taller_trie/tests/gtest-1.8.1/gtest.h
+/home/ldimeo/Desktop/structures_cpp/taller_trie/tests/gtest-1.8.1/gtest.h
 

@@ -6,9 +6,9 @@
 
 #IncludeRegexTransform: 
 
-/Users/lisandrodiaz/Downloads/taller_trie/tests/gtest-1.8.1/gtest-all.cc
+/home/ldimeo/Desktop/structures_cpp/taller_trie/tests/gtest-1.8.1/gtest-all.cc
 gtest.h
-/Users/lisandrodiaz/Downloads/taller_trie/tests/gtest-1.8.1/gtest.h
+/home/ldimeo/Desktop/structures_cpp/taller_trie/tests/gtest-1.8.1/gtest.h
 ctype.h
 -
 math.h
@@ -114,13 +114,13 @@ windows.h
 crt_externs.h
 -
 absl/debugging/failure_signal_handler.h
-/Users/lisandrodiaz/Downloads/taller_trie/tests/gtest-1.8.1/absl/debugging/failure_signal_handler.h
+/home/ldimeo/Desktop/structures_cpp/taller_trie/tests/gtest-1.8.1/absl/debugging/failure_signal_handler.h
 absl/debugging/stacktrace.h
-/Users/lisandrodiaz/Downloads/taller_trie/tests/gtest-1.8.1/absl/debugging/stacktrace.h
+/home/ldimeo/Desktop/structures_cpp/taller_trie/tests/gtest-1.8.1/absl/debugging/stacktrace.h
 absl/debugging/symbolize.h
-/Users/lisandrodiaz/Downloads/taller_trie/tests/gtest-1.8.1/absl/debugging/symbolize.h
+/home/ldimeo/Desktop/structures_cpp/taller_trie/tests/gtest-1.8.1/absl/debugging/symbolize.h
 absl/strings/str_cat.h
-/Users/lisandrodiaz/Downloads/taller_trie/tests/gtest-1.8.1/absl/strings/str_cat.h
+/home/ldimeo/Desktop/structures_cpp/taller_trie/tests/gtest-1.8.1/absl/strings/str_cat.h
 crt_externs.h
 -
 errno.h
@@ -216,7 +216,7 @@ ostream
 string
 -
 
-/Users/lisandrodiaz/Downloads/taller_trie/tests/gtest-1.8.1/gtest.h
+/home/ldimeo/Desktop/structures_cpp/taller_trie/tests/gtest-1.8.1/gtest.h
 limits
 -
 ostream
@@ -358,11 +358,11 @@ vector
 tuple
 -
 absl/strings/string_view.h
-/Users/lisandrodiaz/Downloads/taller_trie/tests/gtest-1.8.1/absl/strings/string_view.h
+/home/ldimeo/Desktop/structures_cpp/taller_trie/tests/gtest-1.8.1/absl/strings/string_view.h
 absl/types/optional.h
-/Users/lisandrodiaz/Downloads/taller_trie/tests/gtest-1.8.1/absl/types/optional.h
+/home/ldimeo/Desktop/structures_cpp/taller_trie/tests/gtest-1.8.1/absl/types/optional.h
 absl/types/variant.h
-/Users/lisandrodiaz/Downloads/taller_trie/tests/gtest-1.8.1/absl/types/variant.h
+/home/ldimeo/Desktop/structures_cpp/taller_trie/tests/gtest-1.8.1/absl/types/variant.h
 iosfwd
 -
 vector

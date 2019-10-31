@@ -25,6 +25,7 @@ void string_map<T>::insert(const pair<string, T> &val) {
         this->_size++;
     }else{
         delete n1->definicion;
+        n1->definicion = nullptr;
     }
     n1->definicion = a;
 }
@@ -46,6 +47,10 @@ template <typename T>
 string_map<T>::~string_map(){
     for(string clave : this->_claves)
         this->erase(clave);
+    delete this->raiz->definicion;
+    this->raiz->definicion = nullptr;
+    delete this->raiz;
+    this->raiz = nullptr;
 }
 
 template <typename T>
@@ -68,11 +73,12 @@ int string_map<T>::count(const string& clave) const{
 }
 
 template <typename T>
-const T& string_map<T>::at(const string& clave) const {
+const T string_map<T>::at(const string& clave) const {
     Nodo * crawler = this->raiz;
     for(int i = 0; i < clave.length() && crawler != nullptr; i++){
         crawler = crawler->siguientes[clave[i]];
     }
+//    return *crawler->definicion;
     if(crawler != nullptr && crawler->definicion != nullptr){
         return *crawler->definicion;
     }else{
@@ -120,11 +126,15 @@ void string_map<T>::erase(const string& clave) { // PRE : La clave esta en el TR
         actual = actual->siguientes[clave[i]];
     }
     if(!hasChild(actual)){
-        while(j < clave.length()){
-            Nodo * siguiente = ultimo->siguientes[clave[j]];
-            ultimo->siguientes[clave[j++]] = nullptr;
-            delete ultimo->siguientes[clave[j]];
-            ultimo = siguiente;
+        Nodo * aborrar = ultimo->siguientes[clave[j]];
+        ultimo->siguientes[clave[j]] = nullptr;
+        while(j < clave.length() - 1){
+            //aborrar = aborrar->siguientes[clave[j]];
+            Nodo * siguiente = aborrar->siguientes[clave[j+1]];
+            aborrar->siguientes[clave[j]] = nullptr;
+            delete aborrar;
+            aborrar = siguiente;
+            j ++;
         }
     }
 
@@ -133,8 +143,9 @@ void string_map<T>::erase(const string& clave) { // PRE : La clave esta en el TR
             this->_claves.erase(this->_claves.begin()+i);
         }
     }
-    actual->definicion = nullptr;
     delete actual->definicion;
+    actual->definicion = nullptr;
+    actual = nullptr;
     this->_size--;
 }
 

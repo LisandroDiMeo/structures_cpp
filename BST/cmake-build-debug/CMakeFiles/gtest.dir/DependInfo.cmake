@@ -4,9 +4,9 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/Users/lisandrodiaz/Desktop/Facultad/Algoritmos2/structures_cpp/BST/tests/gtest-1.8.1/gtest-all.cc" "/Users/lisandrodiaz/Desktop/Facultad/Algoritmos2/structures_cpp/BST/cmake-build-debug/CMakeFiles/gtest.dir/tests/gtest-1.8.1/gtest-all.cc.o"
+  "/home/ldimeo/Desktop/structures_cpp/BST/tests/gtest-1.8.1/gtest-all.cc" "/home/ldimeo/Desktop/structures_cpp/BST/cmake-build-debug/CMakeFiles/gtest.dir/tests/gtest-1.8.1/gtest-all.cc.o"
   )
-set(CMAKE_CXX_COMPILER_ID "AppleClang")
+set(CMAKE_CXX_COMPILER_ID "GNU")
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH

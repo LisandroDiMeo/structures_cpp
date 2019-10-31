@@ -1,1 +1,1 @@
-/Library/Developer/CommandLineTools/usr/bin/c++   -pthread -std=gnu++11 -ggdb3 -g -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/correrTests.dir/src/prueba.cpp.o CMakeFiles/correrTests.dir/tests/conjunto-tests.cpp.o  -o correrTests libgtest.a libgtest_main.a 
+/usr/bin/c++   -pthread -std=gnu++11 -ggdb3 -g -g   CMakeFiles/correrTests.dir/src/prueba.cpp.o CMakeFiles/correrTests.dir/tests/conjunto-tests.cpp.o  -o correrTests libgtest.a libgtest_main.a 

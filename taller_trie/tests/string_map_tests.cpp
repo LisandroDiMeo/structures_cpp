@@ -83,15 +83,6 @@ TEST(string_map_test, count) {
 	EXPECT_FALSE(con_prefijos.count("caso") == 1);
 }
 
-TEST(deleteBro, deleteBro){
-    string_map<int> probando;
-    probando.insert(make_pair("c", 1));
-    probando.insert(make_pair("co",2));
-    probando.insert(make_pair("coda",4));
-    probando.erase("coda");
-    EXPECT_TRUE(probando.count("coda") == 0);
-}
-
 TEST(string_map_test, copiar) {
     string_map<int> sin_prefijos;
     string_map<int> con_prefijos;

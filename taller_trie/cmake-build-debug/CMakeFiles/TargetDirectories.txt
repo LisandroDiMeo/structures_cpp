@@ -1,7 +1,7 @@
-/Users/lisandrodiaz/Downloads/taller_trie/cmake-build-debug/CMakeFiles/edit_cache.dir
-/Users/lisandrodiaz/Downloads/taller_trie/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/Users/lisandrodiaz/Downloads/taller_trie/cmake-build-debug/CMakeFiles/correrValgrind.dir
-/Users/lisandrodiaz/Downloads/taller_trie/cmake-build-debug/CMakeFiles/correrTests_ext.dir
-/Users/lisandrodiaz/Downloads/taller_trie/cmake-build-debug/CMakeFiles/correrTests.dir
-/Users/lisandrodiaz/Downloads/taller_trie/cmake-build-debug/CMakeFiles/gtest_main.dir
-/Users/lisandrodiaz/Downloads/taller_trie/cmake-build-debug/CMakeFiles/gtest.dir
+/home/ldimeo/Desktop/structures_cpp/taller_trie/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/ldimeo/Desktop/structures_cpp/taller_trie/cmake-build-debug/CMakeFiles/correrValgrind.dir
+/home/ldimeo/Desktop/structures_cpp/taller_trie/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/ldimeo/Desktop/structures_cpp/taller_trie/cmake-build-debug/CMakeFiles/gtest.dir
+/home/ldimeo/Desktop/structures_cpp/taller_trie/cmake-build-debug/CMakeFiles/correrTests.dir
+/home/ldimeo/Desktop/structures_cpp/taller_trie/cmake-build-debug/CMakeFiles/gtest_main.dir
+/home/ldimeo/Desktop/structures_cpp/taller_trie/cmake-build-debug/CMakeFiles/correrTests_ext.dir
