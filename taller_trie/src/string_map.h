@@ -93,6 +93,9 @@ private:
     };
     bool hasChild(Nodo *node);
     int nChildren(Nodo *node);
+    void destructorHelper(Nodo *nodo);
+    bool esNodoValido(Nodo *nodo);
+    Nodo *obtenerHijoValido(Nodo *nodo);
     Nodo* raiz;
     int _size;
     vector<string> _claves;

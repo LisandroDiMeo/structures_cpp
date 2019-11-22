@@ -9,25 +9,23 @@ string_map<T>::string_map(){
 
 template<typename T>
 void string_map<T>::insert(const pair<string, T> &val) {
-    Nodo * n1 = this->raiz;
-    for(int i = 0; i < val.first.length(); i++){
-        if(!n1->siguientes[val.first[i]]){
-            Nodo * siguiente = new Nodo();
-            n1->siguientes[val.first[i]] = siguiente;
-            n1 = siguiente;
-        }else{
-            n1 = n1->siguientes[val.first[i]];
-        }
+    Nodo* actual = raiz;
+    for (int i = 0; i < val.first.size() - 1; i++){
+        if (actual->siguientes[val.first[i]] == nullptr)
+            actual->siguientes[val.first[i]] = new Nodo;
+
+        actual = actual->siguientes[val.first[i]];
     }
-    T * a = new T(val.second);
-    if(n1->definicion == nullptr){
-        this->_claves.push_back(val.first);
-        this->_size++;
+
+    if (actual->siguientes[val.first[val.first.size()-1]] != nullptr){
+        T* sigAnterior = actual->siguientes[val.first[val.first.size()-1]]->definicion;
+        actual->siguientes[val.first[val.first.size()-1]]->definicion = new T(val.second);
+        delete sigAnterior;
     }else{
-        delete n1->definicion;
-        n1->definicion = nullptr;
+        actual->siguientes[val.first[val.first.size()-1]] = new Nodo(new T(val.second));
+        _size++;
+        _claves.push_back(val.first);
     }
-    n1->definicion = a;
 }
 
 template <typename T>
@@ -35,8 +33,6 @@ string_map<T>::string_map(const string_map<T>& aCopiar) : string_map() { *this =
 
 template <typename T>
 string_map<T>& string_map<T>::operator=(const string_map<T>& d) {
-    raiz = new Nodo;
-    _size = 0;
     for(string c : d._claves){
         insert(make_pair(c,d.at(c)));
     }
@@ -45,12 +41,8 @@ string_map<T>& string_map<T>::operator=(const string_map<T>& d) {
 
 template <typename T>
 string_map<T>::~string_map(){
-    for(string clave : this->_claves)
-        this->erase(clave);
-    delete this->raiz->definicion;
-    this->raiz->definicion = nullptr;
-    delete this->raiz;
-    this->raiz = nullptr;
+    Nodo* actual = raiz;
+    destructorHelper(actual);
 }
 
 template <typename T>
@@ -112,41 +104,60 @@ int string_map<T>::nChildren(string_map::Nodo *node) {
     return children;
 }
 
+template<typename T>
+bool string_map<T>::esNodoValido(string_map::Nodo *nodo) {
+    return nodo->definicion != nullptr || nChildren(nodo) > 1;
+}
+
+template<typename T>
+typename string_map<T>::Nodo *string_map<T>::obtenerHijoValido(string_map::Nodo *nodo) {
+    vector<Nodo*> hijos = nodo->siguientes;
+    int i = 0;
+    while (i < hijos.size() && hijos[i] == nullptr) {
+        i++;
+    }
+    return hijos[i];
+}
+
 template <typename T>
 void string_map<T>::erase(const string& clave) { // PRE : La clave esta en el TRIE.
-    Nodo * actual = this->raiz;
-    Nodo * ultimo = this->raiz;
-    int j = 0;
+    Nodo* actNodo = raiz;
+    Nodo* ultNodo = raiz;
+    int ultIndice = -1;
 
-    for(int i = 0; i < clave.length(); i++){
-        if((nChildren(actual) > 1 || actual->definicion) && i < clave.length() - 1){
-            ultimo = actual;
-            j = i;
-        }
-        actual = actual->siguientes[clave[i]];
-    }
-    if(!hasChild(actual)){
-        Nodo * aborrar = ultimo->siguientes[clave[j]];
-        ultimo->siguientes[clave[j]] = nullptr;
-        while(j < clave.length() - 1){
-            //aborrar = aborrar->siguientes[clave[j]];
-            Nodo * siguiente = aborrar->siguientes[clave[j+1]];
-            aborrar->siguientes[clave[j]] = nullptr;
-            delete aborrar;
-            aborrar = siguiente;
-            j ++;
+    for (int i = 0; i < clave.size(); ++i) {
+        actNodo = actNodo->siguientes[clave[i]];
+        if (esNodoValido(actNodo) && i != clave.size()-1){
+            ultNodo = actNodo;
+            ultIndice = i;
         }
     }
 
-    for(int i = 0; i < this->_claves.size(); i++){
-        if(this->_claves[i] == clave){
-            this->_claves.erase(this->_claves.begin()+i);
+    T* def = actNodo->definicion;
+    actNodo->definicion = nullptr;
+    delete def;
+
+    if (nChildren(actNodo) == 0){
+
+        Nodo* aux = ultNodo->siguientes[clave[ultIndice+1]];
+        ultNodo->siguientes[clave[ultIndice+1]] = nullptr;
+        ultNodo = aux;
+
+        while (ultNodo != actNodo){
+            Nodo* borrar = ultNodo;
+            ultNodo = obtenerHijoValido(ultNodo);
+            delete borrar;
         }
+        delete actNodo;
     }
-    delete actual->definicion;
-    actual->definicion = nullptr;
-    actual = nullptr;
-    this->_size--;
+
+    _size--;
+    vector<string> clavesAux;
+    for (string c : _claves){
+        if (c != clave)
+            clavesAux.push_back(c);
+    }
+    _claves = clavesAux;
 }
 
 template <typename T>
@@ -165,7 +176,22 @@ vector<string> &string_map<T>::claves() {
 }
 
 
+template<typename T>
+void string_map<T>::destructorHelper(string_map::Nodo *nodo) {
+    T* def = nodo->definicion;
+    nodo->definicion = nullptr;
+    delete def;
 
+    //Limpio el vector de siguientes
+    for (int i = 0; i < nodo->siguientes.size(); i++){
+        if (nodo->siguientes[i] != nullptr){
+            Nodo* n = nodo->siguientes[i];
+            nodo->siguientes[i] = nullptr;
+            destructorHelper(n);
+        }
+    }
+    delete nodo;
+}
 
 
 
